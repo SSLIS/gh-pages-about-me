@@ -35,7 +35,7 @@ jobs:
       # personalize readme for user
       - name: Init readme
         run: |
-          echo "# {{ github.repository }}
+          echo "# ${{ github.repository_name }}
    
           Hello ${{ github.repository_owner }}! Thanks for using this template.
 
