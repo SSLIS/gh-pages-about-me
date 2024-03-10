@@ -16,7 +16,6 @@ permissions:
   checks: write
   contents: write
 
-
 jobs:
   first-time-setup:
     # ensure run only once, when repo generated
@@ -28,9 +27,6 @@ jobs:
       # get main branch repo contents
       - name: Checkout code
         uses: actions/checkout@v4
-        # ADDED THIS CHANGE
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       # remove files not needed for user instance of template
       - name: Remove unneeded files
@@ -41,7 +37,7 @@ jobs:
         run: |
           echo "
    
-          Personalized readme text. Hello ${{ github.repository_owner }}!
+          Personalized readme text. Hello ${{ github.repository_owner }}! tester
 
           " > README.md
 
