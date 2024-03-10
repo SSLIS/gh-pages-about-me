@@ -25,7 +25,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # get main branch repo contents
       - name: Checkout code
         uses: actions/checkout@v3
         # ADDED THIS CHANGE
