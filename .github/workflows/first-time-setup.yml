@@ -30,7 +30,7 @@ jobs:
 
       # remove files not needed for user instance of template
       - name: Remove unneeded files
-        run: rm -f README.md .zenodo.json CONTRIBUTING.md CODE_OF_CONDUCT.md LICENSE
+        run: rm -f README.md .zenodo.json CONTRIBUTING.md CODE_OF_CONDUCT.md LICENSE first-time-setup.yml
 
       # personalize readme for user
       - name: Init readme
