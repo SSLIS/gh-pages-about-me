@@ -30,14 +30,16 @@ jobs:
 
       # remove files not needed for user instance of template
       - name: Remove unneeded files
-        run: rm -f README.md demo.md testbed.md
+        run: rm -f README.md .zenodo.json CONTRIBUTING.md CODE_OF_CONDUCT.md LICENSE
 
       # personalize readme for user
       - name: Init readme
         run: |
-          echo "
+          echo "# {{ github.event.repository.name }}
    
-          Personalized readme text. Hello ${{ github.repository_owner }}! tester
+          Hello ${{ github.repository_owner }}! Thanks for using this template.
+
+          Don't forget to update this README.md file to suit your project's needs!
 
           " > README.md
 
