@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10802036.svg)](https://doi.org/10.5281/zenodo.10802036)
+
 # gh-pages-about-me
 
 ## About the Repository
